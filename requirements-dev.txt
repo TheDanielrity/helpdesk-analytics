@@ -1,0 +1,3 @@
+-r requirements.txt
+# Parser T-SQL local; no sustituye la compilación con SQL Server.
+sqlfluff>=3.5,<4.0

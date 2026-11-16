@@ -1,0 +1,75 @@
+# Entornos virtuales
+.venv/
+venv/
+env/
+ENV/
+
+# Python y herramientas
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+build/
+dist/
+*.egg-info/
+
+# Credenciales y configuración local
+.env
+.env.*
+!.env.example
+.aws/
+.secrets/
+credentials/
+secrets/
+# Memoria local: conservar las bases en disco, sin publicarlas.
+.kin/local/
+# Preferencias y credenciales de herramientas locales.
+.codex/
+.agents/
+.vscode/*
+!.vscode/settings.json
+*.pem
+*.key
+*.pfx
+*.p12
+
+# Datos locales: conservar únicamente los marcadores de carpetas
+data/**
+!data/**/
+!data/**/.gitkeep
+# Diccionario público del proveedor, necesario para los notebooks.
+!data/FEATURES.md
+*.csv
+*.tsv
+*.xlsx
+*.xls
+*.parquet
+*.feather
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.sqlite3-*
+*.db
+*.db-*
+*.zip
+*.pbix
+*.pbit
+
+# Archivos del sistema y registros
+.DS_Store
+Thumbs.db
+*.log
+
+# Temporales, copias de respaldo y restos de editores/merges
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+*.orig
+*.rej
