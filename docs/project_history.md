@@ -2,7 +2,7 @@
 
 Este documento conserva las entregas originales de las fases 3, 4 y 6. Los pendientes y las referencias a «esta fase» describen cada etapa, no el estado actual del proyecto. Todos los comandos se ejecutan desde la raíz del repositorio.
 
-[Volver al README](../README.md) · [Estado actual de publicación y seguridad](../README.md#estado-de-publicación-y-seguridad)
+[Volver al README](../README.md)
 
 ## Fase 3.1: preparación de SQL Server
 

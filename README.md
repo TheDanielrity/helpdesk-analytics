@@ -17,7 +17,7 @@ El proyecto describe una extracción histórica: no acredita mejoras empresarial
 - [Inicio rápido](#inicio-rápido) e [instalación y reproducción](#instalación-y-reproducción).
 - [Pruebas y validaciones](#pruebas-y-estado-de-verificación).
 - [Fuente y licencias](#fuente-de-datos-y-atribución).
-- [Estado de publicación y seguridad](#estado-de-publicación-y-seguridad) e [historial técnico](#historial-técnico-conservado).
+- [Historial técnico](docs/project_history.md): documentación completa de las fases 3, 4 y 6.
 
 ## Dashboard Power BI
 
@@ -240,19 +240,3 @@ La ficha web actual describe datos desde 2007; el `FEATURES.md` local describe t
 El **código propio** se distribuye bajo la [licencia MIT](LICENSE): comprende el código Python, las consultas SQL y las celdas de código propias de los notebooks. Copyright (c) 2026 Daniel Prado Jimenez, titular confirmado expresamente para este proyecto.
 
 El **dataset original mantiene su licencia CC BY 4.0**. Esa atribución también acompaña al material del proveedor, como `data/FEATURES.md`, y a los extractos del dataset reproducidos en informes, salidas y capturas. La MIT del código no cambia la licencia de esos datos ni implica respaldo del proveedor al proyecto. Se mantienen el crédito, la fuente y la indicación de las transformaciones realizadas.
-
-## Estado de publicación y seguridad
-
-El proyecto está **publicado en [GitHub](https://github.com/TheDanielrity/helpdesk-analytics)**. Git está inicializado y la rama principal es `main`. El [primer commit, `69b854e`](https://github.com/TheDanielrity/helpdesk-analytics/commit/69b854e8f530de42982432206a923ea1630b8562), ya fue creado y publicado; el [commit `73641b6`](https://github.com/TheDanielrity/helpdesk-analytics/commit/73641b6ae6225beca0c5671ace38307b7b396c66) excluyó las carpetas locales `.kin/` y `.vscode/` del árbol actual.
-
-Se publican código, consultas, documentación, notebooks con salidas revisadas, dependencias, `.env.example`, la licencia y las cuatro capturas reales. Los CSV, `.env`, `.venv/`, PBIX, `.kin/`, `.vscode/`, bases locales, credenciales y cachés permanecen excluidos. La plantilla `.env.example` contiene ejemplos y campos de autenticación vacíos.
-
-Los dos notebooks están validados y las cuatro pruebas de integración SQL están completadas: **4 ejecutadas y superadas; 0 fallidas, errores u omitidas**. Las tres vistas `bi` resultaron accesibles y los conteos coincidieron con 66.691 tickets, 257.508 eventos y 1.333.820 filas ticket–estado. La evidencia de ejecución y sus límites están en [la reverificación SQL](reports/publication_checklist.md#reverificación-sql-server--15-de-noviembre-de-2026).
-
-La revisión de seguridad de la fase 6.5 confirmó la procedencia pública de las claves de registros y de los códigos de proyecto ya enmascarados que aparecen en los cuatro informes históricos. No se publican valores de usuarios ni credenciales en esos informes. Las claves siguen siendo enlazables con el dataset público; no se presentan como anonimización irreversible. El detalle y los límites de la revisión están en [el checklist](reports/publication_checklist.md#revisión-final-de-seguridad-y-licencia--fase-65).
-
-El [checklist de publicación](reports/publication_checklist.md) conserva las revisiones por fase, incluido el estado anterior al primer commit. Los antiguos pendientes de Git y publicación corresponden a esas etapas; el estado actual es el descrito en este apartado. La documentación técnica original se conserva íntegra en [el historial del proyecto](docs/project_history.md).
-
-## Historial técnico conservado
-
-El [historial técnico completo](docs/project_history.md) conserva la documentación de las fases 3, 4 y 6: preparación y carga SQL, análisis, vistas, modelo Power BI y publicación inicial. Los antiguos pendientes se mantienen en el contexto de su entrega.
