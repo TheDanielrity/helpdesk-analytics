@@ -26,12 +26,11 @@ dist/
 credentials/
 secrets/
 # Memoria local: conservar las bases en disco, sin publicarlas.
-.kin/local/
+.kin/
 # Preferencias y credenciales de herramientas locales.
 .codex/
 .agents/
-.vscode/*
-!.vscode/settings.json
+.vscode/
 *.pem
 *.key
 *.pfx
